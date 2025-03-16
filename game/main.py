@@ -55,7 +55,7 @@ with mp_hand.Hands(min_detection_confidence=0.5,
                     fingers.append(0)
             total=fingers.count(1)
             if total==0:
-                cv2.rectangle(image, (20, 300), (270, 425), (0, 255, 0), cv2.FILLED)
+                #cv2.rectangle(image, (20, 300), (270, 425), (0, 255, 0), cv2.FILLED)
                 cv2.putText(image, "BRAKE", (45, 375), cv2.FONT_HERSHEY_SIMPLEX,
                     2, (255, 0, 0), 5)
                 PressKey(break_key_pressed)
@@ -65,7 +65,7 @@ with mp_hand.Hands(min_detection_confidence=0.5,
                 keyPressed = True
                 key_count=key_count+1
             elif total==5:
-                cv2.rectangle(image, (20, 300), (270, 425), (0, 255, 0), cv2.FILLED)
+                #cv2.rectangle(image, (20, 300), (270, 425), (0, 255, 0), cv2.FILLED)
                 cv2.putText(image, " GAS", (45, 375), cv2.FONT_HERSHEY_SIMPLEX,
                     2, (255, 0, 0), 5)
                 PressKey(accelerato_key_pressed)
