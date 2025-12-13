@@ -37,12 +37,6 @@ Open Hand (5 fingers)	Accelerator	M
 
 You can change key mappings inside directkeys.py.
 
-# Project Structure
-hill_climbing/
-│
-├── main.py          # Hand tracking and gesture logic
-├── directkeys.py    # Low-level keyboard input handler (Windows)
-├── README.md        # Project documentation
 
 # Installation
 Clone the Repository
